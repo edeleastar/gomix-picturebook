@@ -4,7 +4,25 @@
   <h1 class="ui heaader">
     Welcome {{user.firstName}} {{user.lastName}}
   </h1>
-  <p>
-    Logged in Successfully!
-  </p>
+
+  <section class="ui raised segment">
+    <div class="ui cards">
+    {{#each album.pictures}}
+      {{> card }}
+    {{/each}}
+    </div>
+  </section>
+
+  <section class="ui raised segment">
+    <div class="ui small dividing header"> Profile Image </div>
+    <section class="ui raised form segment">
+      <form action="/dashboard/uploadpicture" method="post" enctype="multipart/form-data">
+        <div class="ui field">
+          <input type="file" name="picture">  </input>
+        </div>
+        <button class="ui mini blue submit button"> Upload</button>
+      </form>
+    </section>
+  </section>
+
 </section>
