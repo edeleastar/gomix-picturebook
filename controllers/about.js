@@ -6,7 +6,7 @@ const about = {
   index(request, response) {
     logger.info('about rendering');
     const viewData = {
-      title: 'About Template 2',
+      title: 'About PictureBook',
     };
     response.render('about', viewData);
   },

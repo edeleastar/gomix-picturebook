@@ -6,7 +6,7 @@ const start = {
   index(request, response) {
     logger.info('start rendering');
     const viewData = {
-      title: 'Welcome to Template 2',
+      title: 'Welcome to PictureBook',
     };
     response.render('start', viewData);
   },
