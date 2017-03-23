@@ -14,13 +14,20 @@
   </section>
 
   <section class="ui raised segment">
-    <div class="ui small dividing header"> Profile Image </div>
+    <div class="ui small dividing header"> Picture Upload </div>
     <section class="ui raised form segment">
       <form action="/dashboard/uploadpicture" method="post" enctype="multipart/form-data">
-        <div class="ui field">
-          <input type="file" name="picture">  </input>
+        <div class="two fields">
+          <div class="field">
+            <label>First Name</label>
+            <input type="file" name="picture">  </input>
+          </div>
+          <div class="field">
+            <label>Title</label>
+            <input placeholder="Title" type="text" name="title">
+          </div>
         </div>
-        <button class="ui mini blue submit button"> Upload</button>
+        <button class="ui mini blue submit button"> Upload </button>
       </form>
     </section>
   </section>
